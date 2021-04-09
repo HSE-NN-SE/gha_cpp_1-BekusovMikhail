@@ -40,6 +40,7 @@ jobs:
           path: "*.exe"
           retention-days: 4
   teleg:
+    needs: Ex01
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
