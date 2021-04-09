@@ -32,7 +32,7 @@ int main() {
     int n;
     cin>>n;
 
-    cout << getPrime(n);
+    cout << getPrime(65);
 
     return 0;
 }
