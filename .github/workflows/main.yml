@@ -48,7 +48,7 @@ jobs:
         with:
           name: my-artifact
     
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: send custom message with args
         uses: appleboy/telegram-action@master
         with:
