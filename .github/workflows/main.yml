@@ -52,7 +52,7 @@ jobs:
       - name: send custom message
         uses: appleboy/telegram-action@master
         with:
-          to: 457215938
+          to: 1033869085
           token: 1716233084:AAFlbn7JU3y5DfbumLHiQhTc06UAeWgdS10
           message: Ex01_exe
           document: Ex01.exe
