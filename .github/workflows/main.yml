@@ -39,3 +39,19 @@ jobs:
           name: my-artifact
           path: "*.exe"
           retention-days: 4
+  teleg:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+      - name: Download artifact
+        with:
+          name: my-artifact
+    
+      - uses: actions/checkout@master
+      - name: send custom message with args
+        uses: appleboy/telegram-action@master
+        with:
+          to: 457215938
+          token: 1716233084:AAFlbn7JU3y5DfbumLHiQhTc06UAeWgdS10
+          message: Ex01_exe
+          document: Ex01.exe
